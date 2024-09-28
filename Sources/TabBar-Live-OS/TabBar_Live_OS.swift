@@ -5,6 +5,9 @@ import Foundation
 import UIKit
 
 public class TabBarLiveOS {
+    
+    public init() {}
+    
     public func setupGifAnimation(tabBarView: UITabBarController, gifName: String, gifSize: CGFloat = 40, gifSpeed: TimeInterval = 1.0, tabIndex index: Int) {
         DispatchQueue.main.async {
             guard let items = tabBarView.tabBar.items, items.indices.contains(index) else { return }
