@@ -11,9 +11,9 @@ It is not possible to add gifs to tabbar with normal UIkit due to its structure.
 
 ```bash
   let package = Package(
-    // 5.1.0 
+    // 1.2.2 
     dependencies: [
-        .package(url: "https://github.com/omersai/TabBar-Live-OS.git", from: "1.0.0")
+        .package(url: "https://github.com/omersai/TabBar-Live-OS.git", from: "1.2.2")
     ],
     // ...
 )
