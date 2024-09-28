@@ -3,9 +3,6 @@
 
 It is not possible to add gifs to tabbar with normal UIkit due to its structure. You can easily add it with this library.
 
-
-
-
 ## Installation: SPM
 
  Swift Package Manager (SwiftPM) is a tool for managing the distribution of Swift code as well as C-family dependency. From Xcode 11, SwiftPM got natively integrated with Xcode.
@@ -28,11 +25,8 @@ It is not possible to add gifs to tabbar with normal UIkit due to its structure.
 Import the project.
 Add any gif you want to use to your project.
 
-
-
 ```bash
   import TabBar_Live_OS
-
 
   class TabbarViewController: UITabBarController {
     
@@ -46,6 +40,7 @@ Add any gif you want to use to your project.
 }
 ```
 ![App Screenshot](https://github.com/omersai/TabBar-Live-OS/blob/main/Screen.gif?raw=true)
+
 And that's it, happy ending :)
 
 
@@ -69,5 +64,4 @@ You can give the following parameters to the setupGifAnimation method.
 ## Used By
 
 Created By Ömer SAİTOĞLU
-
 
