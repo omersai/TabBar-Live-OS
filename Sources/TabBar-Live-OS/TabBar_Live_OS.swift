@@ -4,14 +4,14 @@
 import Foundation
 import UIKit
 
-public class TabBarLiveOS {
-    
+public class TABOS {
+     
     public init() {}
     
-    public func setupGifAnimation(tabBarView: UITabBarController, gifName: String, gifSize: CGFloat = 40, gifSpeed: TimeInterval = 1.0, tabIndex index: Int) {
+    public static func tabAnimation(tabController: UITabBarController, gifName: String, gifSize: CGFloat = 40, gifSpeed: TimeInterval = 1.0, tabIndex index: Int) {
         DispatchQueue.main.async {
-            guard let items = tabBarView.tabBar.items, items.indices.contains(index) else { return }
-            let tabBarButton = tabBarView.tabBar.subviews[items.count / 2]
+            guard let items = tabController.tabBar.items, items.indices.contains(index) else { return }
+            let tabBarButton = tabController.tabBar.subviews[items.count / 2]
             tabBarButton.subviews.filter { $0.tag == 999 }.forEach { $0.removeFromSuperview() }
             
             guard let path = Bundle.main.path(forResource: gifName, ofType: "gif"),
@@ -34,7 +34,7 @@ public class TabBarLiveOS {
             )
             gifImageView.tag = 999
             
-            guard let tabBarItemView = tabBarView.tabBar.items?[index].value(forKey: "view") as? UIView else {
+            guard let tabBarItemView = tabController.tabBar.items?[index].value(forKey: "view") as? UIView else {
                 print(ErrorKeys.tabBarError.rawValue)
                 return
             }
