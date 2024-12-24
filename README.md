@@ -52,7 +52,17 @@ You can give the following parameters to the setupGifAnimation method.
 | tabIndex | Int|
 
 
-
+## Possible Error Messages and Solutions
+If the GIF does not work in the TabBar, you can make the necessary adjustments by using the error messages in the Xcode console screen below.
+- “Error: GIF file could not be opened.”
+    
+    Solution: The file extension may not be .gif, or the file name may be different.
+- “GIF could not be loaded.”
+    
+    Solution: The file name may be different. Please check the file name.
+- “Tab bar item view not found.”
+    
+    Solution: A tab bar may not be added to the project.
 
 ## License
 
