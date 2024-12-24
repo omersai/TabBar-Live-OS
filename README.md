@@ -11,9 +11,9 @@ It is not possible to add gifs to tabbar with normal UIkit due to its structure.
 
 ```bash
   let package = Package(
-    // 1.2.2 
+    // 1.2.3 
     dependencies: [
-        .package(url: "https://github.com/omersai/TabBar-Live-OS.git", from: "1.2.2")
+        .package(url: "https://github.com/omersai/TabBar-Live-OS.git", from: "1.2.3")
     ],
     // ...
 )
@@ -29,13 +29,11 @@ Add any gif you want to use to your project.
   import TabBar_Live_OS
 
   class TabbarViewController: UITabBarController {
-    
-    let tabBarLiveOS = TabBarLiveOS()
  
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tabBarLiveOS.setupGifAnimation(tabBarView: self, gifName: "yourGifName", tabIndex: 1)
+        TABOS.tabAnimation(tabController: self, gifName: "yourGifName", tabIndex: 1)
     }
 }
 ```
